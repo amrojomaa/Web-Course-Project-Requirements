@@ -1,0 +1,141 @@
+:root {
+    --primary-color: #0015ff;
+    --secondary-color: #000000;
+    --text-color: #ffffff;
+    --background-color: #f0f0f0;
+    --dark-background: #ff0000;
+    --dark-text: #3a03ff;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    /* width: 100; */
+    justify-content: space-between;
+    align-items:center;
+    padding: 1rem 2rem;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.2s;
+}
+
+.navigation ul li a:hover {
+    color: #0000ff;
+    text-decoration: underline;  
+}
+
+
+.hero {
+    text-align: left;
+    width: 768px;
+    color: #000000;
+    padding: 1rem 2rem;
+    /* background: url('../images/sample-image.jpg') no-repeat center center/cover; */
+    color: var(--secondary-color);
+    
+}
+
+.hero:hover {
+    /* background-color:#951d1d; */
+    width: 900px;
+    /* height: 200px; */
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 800px;
+    background-color: var(--text-color);
+    color: var(--secondary-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section:hover{
+    width: 900px;
+    /* height: 200px; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    width: 600px;
+}
+
+form button {
+    width: 150px;
+    margin: auto;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+   background-color:#f0f0f0;
+    color: #000000;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: url('../images/sample-image.jpg') no-repeat center center/cover;
+    color: var(--text-color);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+    }
+}

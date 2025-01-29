@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/ph.jpg">
+</head>
+<body>
+    <header>
+        <div class="logo">Welcome to Physics World</div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Home</h1>
+            <p>
+                Explore the beauty of physics! From the tiniest particles to the vastness of the universe, we make learning science fun and accessible.
+            </p>
+        </section>
+           
+        <section id="about">
+            <h2>About Us</h2>
+            <article>
+                <p>Physics World.We are a team of experts dedicated to simplifying physics for everyone.
+                Our Mission: Provide quality educational content and build a scientific community.
+                Our Values: Curiosity, Clarity, Collaboration.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="contact-method">Preferred Contact Method:</label>
+                <select id="contact-method" name="contact-method" required>
+                    <option value="">Choose...</option>
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Project. All rights reserved.</p>
+    </footer>
+
+     <script src="scripts/script.js"></script>  
+</body>
+</html>
